@@ -1,0 +1,11 @@
+import random
+from collections import Counter
+def freq():
+    lis = []
+    for i in range(1000):
+        dice1 = random.randint(0, 6)
+        dice2 = random.randint(0, 6)
+        lis.append((dice1, dice2))
+    return Counter.lis
+
+print(freq())
