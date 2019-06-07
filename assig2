@@ -1,0 +1,26 @@
+def weavedstring(s1, s2):
+    result = ""
+    if (len(s1) == len(s2)):
+        result = same_length(s1, s2, result)
+    else:
+        result = diff_length(s1, s2, result)
+
+    return result  
+    
+def same_length(s1, s2, result):
+    for i in range(len(s1)):
+             result = result + s1[i] + s2[i]
+    return result
+
+def diff_length(s1, s2, result):
+    for i in range(len(s1)):
+        result = result + s1[i] + s2[i]
+    if(s1[i] !=" "):
+        result = result + s1[i:len(s1)]
+    else:
+        result = result + s1[i:len(s1)]
+        
+    
+s1= "tripti"
+s2 = "naitha"
+print(weavedstring(s1, s2))
