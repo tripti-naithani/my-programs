@@ -1,0 +1,21 @@
+win_score = 1
+draw_score = 0
+loss_score = -1
+win = ["SP", "PR", "RS"]
+draw = ["RR", "SS", "PP"]
+
+def final_score(input_list):
+    total_score = 0
+    for pair in input_list:
+        if pair in win:
+            total_score += win_score
+        elif pair in draw:
+            total_score += draw_score
+        else:
+            total_score += loss_score
+    return total_score
+                  
+input_list = list(map(str,input().split(",")))
+print(final_score(input_list))
+
+
