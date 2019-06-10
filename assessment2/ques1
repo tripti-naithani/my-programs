@@ -1,0 +1,14 @@
+def check_ambiguous(date):
+    first_part = date[0:2]
+    second_part = date[3:5]
+    if(first_part < '13' or second_part < '13'):
+        return "ambiguous"
+    elif(first_part > '12' and second_part < '13'):
+        return "not ambiguous"
+    elif(second_part > '12' and first_part < '13'):
+        return "not ambiguous"              
+    else:
+        return "not ambiguous"
+    
+date = input()
+print(check_ambiguous(date))
