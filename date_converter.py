@@ -43,7 +43,7 @@ def day_number(month, day, year) :
 
     return total_days
 
-def date_convertor(input_date) :
+def date_converter(input_date) :
     year = year_extractor(input_date)
     month = month_extractor(input_date)
     day = date_extractor(input_date)
@@ -52,4 +52,4 @@ def date_convertor(input_date) :
 
 
 input_date= input()
-print(date_convertor(input_date))
+print(date_converter(input_date))
