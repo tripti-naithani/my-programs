@@ -45,8 +45,8 @@ def n_previous_reading (input_reading ,n) :
     return n_next_list
 
 def dis_between_readings (reading1 , reading2) :
-    index1=readings.index(reading1)
-    index2= readings.index(reading2)
+    index1 = readings.index(reading1)
+    index2 =  readings.index(reading2)
     return abs (index1 - index2)
 
 k = 3
