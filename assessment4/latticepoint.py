@@ -39,13 +39,19 @@ def NESW(point, step):
     for i in range(0, step[0]):
         point = step[1] + (point)  #example: N(point) or S(point), calling to a function will occur
 
+def NE_SW_NW_SW(point, step):
+    for i in range(0, step[0]):
+        point = step[1:3] + (point)
+    
+
 def terminus(point, steps):
     for step in steps:
         if (len(step) ==  2):
             point = NESW(point, step)
         else:
-            point = NESW(point, step)
+            point = NE_SW_NW_SW(point, step)
             
+    return point
             
             
         
