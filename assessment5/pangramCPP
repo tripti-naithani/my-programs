@@ -1,4 +1,3 @@
-
 bool checkPangram (string str) {
  
     vector<bool> check(26, false);
@@ -9,7 +8,10 @@ bool checkPangram (string str) {
         {
         index = str[i] - 'A';
         }
-        else if(str[i] >= 'a' && str[i] <= 'z')index = str[i] - 'a';
+        else if(str[i] >= 'a' && str[i] <= 'z')
+        {
+        index = str[i] - 'a';
+        }
         check[index] = true;
     }
     for (int i = 0; i <= 25; i++)
